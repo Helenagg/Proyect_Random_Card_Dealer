@@ -21,7 +21,11 @@ window.onload = function() {
 
   const numberRandom = document.querySelector("#number");
   const pokerRandom = document.querySelector("#poker");
+  const pokerRandom2 = document.querySelector("#poker2");
   numberRandom.innerHTML = createRandom(numbers);
-  pokerRandom.innerHTML = createRandom(sticksPoker);
+
+  let num = createRandom(sticksPoker);
+  pokerRandom.innerHTML = num;
+  pokerRandom2.innerHTML = num;
   console.log("Hello Rigo from the console!");
 };

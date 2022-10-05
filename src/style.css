@@ -1,9 +1,14 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-#numbers::after {
-  content: attr(id= "poker");
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -webkit-transform: rotate(90deg);
+#poker2 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  margin-top: 70%;
+  margin-left: 80%;
+}
+
+#poker {
+  margin-right: 80%;
 }
