@@ -7,5 +7,21 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
+
+  const numbers = ["AS", 2, 3, 4, 5, 6, 7, 8, "J", "Q", "K"];
+  const sticksPoker = ["♦️", "♥️", "♠️", "♣️"];
+
+  const createRandom = arr => {
+    const numRandom = Math.floor(Math.random() * arr.length);
+    const result = arr[numRandom];
+    return result;
+  };
+  // console.log(createRandom(numbers));
+  // console.log(createRandom(sticksPoker));
+
+  const numberRandom = document.querySelector("#number");
+  const pokerRandom = document.querySelector("#poker");
+  numberRandom.innerHTML = createRandom(numbers);
+  pokerRandom.innerHTML = createRandom(sticksPoker);
   console.log("Hello Rigo from the console!");
 };
