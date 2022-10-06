@@ -19,13 +19,18 @@ window.onload = function() {
   // console.log(createRandom(numbers));
   // console.log(createRandom(sticksPoker));
 
-  const numberRandom = document.querySelector("#number");
-  const pokerRandom = document.querySelector("#poker");
-  const pokerRandom2 = document.querySelector("#poker2");
-  numberRandom.innerHTML = createRandom(numbers);
+  function createCard() {
+    const numberRandom = document.querySelector("#number");
+    const pokerRandom = document.querySelector("#poker");
+    const pokerRandom2 = document.querySelector("#poker2");
+    numberRandom.innerHTML = createRandom(numbers);
 
-  let num = createRandom(sticksPoker);
-  pokerRandom.innerHTML = num;
-  pokerRandom2.innerHTML = num;
+    let num = createRandom(sticksPoker);
+    pokerRandom.innerHTML = num;
+    pokerRandom2.innerHTML = num;
+  }
+
+  const btn = document.querySelector("#btn-card");
+  btn.addEventListener("click", createCard);
   console.log("Hello Rigo from the console!");
 };
