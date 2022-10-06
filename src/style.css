@@ -5,4 +5,12 @@
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
+  position: absolute;
+  left: 80%;
+  top: 85%;
+}
+#poker {
+  position: absolute;
+  right: 80%;
+  top: 5%;
 }
