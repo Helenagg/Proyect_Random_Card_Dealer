@@ -32,5 +32,10 @@ window.onload = function() {
 
   const btn = document.querySelector("#btn-card");
   btn.addEventListener("click", createCard);
+
+  function timer() {
+    return setInterval(createCard, 10000);
+  }
+  console.log(timer());
   console.log("Hello Rigo from the console!");
 };
